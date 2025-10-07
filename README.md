@@ -30,3 +30,5 @@ The RTL8720dn-Deauther utilizes the RGB led that most devboards have. This is wh
 * Blue: Flashes when a deauth frame is being sent.
 ## License
 All files within this repo are released under the GNU GPL V3 License as per the LICENSE file stored in the root of this repo.
+## what makes this project diffrent from the master
+this fork of the orginal is intended to increase the capabilites of the RTL8720dn by implementing becon, probe and phising attacks along side this i am mainly going to base it off another project made for a diffrent chip the esp8266 this project had some shortcomings with not being able to deauth on 5ghz
