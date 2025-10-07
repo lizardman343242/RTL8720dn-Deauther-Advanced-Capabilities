@@ -39,6 +39,7 @@ uint16_t deauth_reason = 2;
 int frames_per_deauth = 5;
 int send_delay = 5;
 bool isDeauthing = false;
+bool isbeaconing = false;
 bool led = true;
 
 rtw_result_t scanResultHandler(rtw_scan_handler_result_t *scan_result) {
@@ -690,7 +691,17 @@ void loop() {
       digitalWrite(LED_G, LOW);
     }
   }
-  
+  // below is in contruciton for a becon attack that coppys all selected networks on there own channels
+  std::vector<String> all_ssids;
+for (auto &group : deauth_channels) {
+  std::vector<String> tmp = something(group.second);
+  all_ssids.insert(all_ssids.end(), tmp.begin(), tmp.end());
+}
+  std::vector<String> ssids = something(indices);
+int count = ssids.size();  // number of SSIDs
+DEBUG_SER_PRINTLN("Number of SSIDs: " + String(count));
+// working on this bit
+
   if (isDeauthing && !deauth_channels.empty()) {
     for (auto& group : deauth_channels) {
       int ch = group.first;
