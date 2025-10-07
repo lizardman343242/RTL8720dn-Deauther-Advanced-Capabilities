@@ -5,7 +5,15 @@
 ![GitHub forks](https://img.shields.io/github/forks/lizardman343242/RTL8720dn-Deauther-Advanced-Capabilities?style=flat)
 ![logo](https://github.com/user-attachments/assets/ab8ebf84-eee2-4298-8975-2e8dad13c1b3)
 
-My ESP32-Deauther ported to the RTL8720dn, allowing users to deauthenticate on 5Ghz now!
+this is a fork of the orginal [RTL8720dn-Deauther](https://github.com/tesa-klebeband/RTL8720dn-Deauther) this project brang deuthers to 5ghz,
+ this project is going to add ontop of this other actions the RTL8720dn can take with 
+
+ Becon
+ 
+ Probe
+ 
+ Phising
+ 
 # DISCLAIMER
 This tool has been made for educational and testing purposes only. Any misuse or illegal activities conducted with the tool are strictly prohibited. I am **not** responsible for any consequences arising from the use of the tool, which is done at your own risk.
 ## Building
