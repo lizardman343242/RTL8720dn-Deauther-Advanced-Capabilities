@@ -10,7 +10,7 @@ My ESP32-Deauther ported to the RTL8720dn, allowing users to deauthenticate on 5
 This tool has been made for educational and testing purposes only. Any misuse or illegal activities conducted with the tool are strictly prohibited. I am **not** responsible for any consequences arising from the use of the tool, which is done at your own risk.
 ## Building
 Building is done using the ArduinoIDE. Make sure you have added the board manager URL for Realtek MCUs and installed them in the board manager.
-1) Clone this repo using `git clone https://github.com/tesa-klebeband/RTL8720dn-Deauther.git`
+1) Clone this repo using `git clone https://github.com/lizardman343242/RTL8720dn-Deauther-Advanced-Capabilities.git`
 2) Open the cloned folder in the Arduino IDE
 3) Connect your board and hit upload
 ### Notes
@@ -23,6 +23,8 @@ Rescan and detect all WiFi networks in your area. After a successful scan, the n
 Deauthenticates all clients connected to one or multiple networks. Select the networks you want to deauth in the table above and click **Start Attack!**.
 ### Stopping a Deauth-Attack
 To stop an ongoing attack, hit the **Stop** button.
+### Launch Becon-Attack
+Sends out fake wifi networks to all devices in range, decide and customise the amount and names of these fake wifi networks.
 ### Leds
 The RTL8720dn-Deauther utilizes the RGB led that most devboards have. This is what the different colors indicate:
 * Red: The system state. Lights up when the system is usable.
@@ -30,5 +32,5 @@ The RTL8720dn-Deauther utilizes the RGB led that most devboards have. This is wh
 * Blue: Flashes when a deauth frame is being sent.
 ## License
 All files within this repo are released under the GNU GPL V3 License as per the LICENSE file stored in the root of this repo.
-## what makes this project diffrent from the master
-this fork of the orginal is intended to increase the capabilites of the RTL8720dn by implementing becon, probe and phising attacks along side this i am mainly going to base it off another project made for a diffrent chip the esp8266 this project had some shortcomings with not being able to deauth on 5ghz
+## Intentions
+this fork of the orginal is intended to increase the capabilites of the RTL8720dn by implementing becon, probe and phising attacks along side this i am mainly going to base it off another project made for a diffrent chip the esp8266 [spacehuns deauther](https://github.com/SpacehuhnTech/esp8266_deauther) project had some shortcomings with not being able to deauth on 5ghz because of the hardware capabilites of the esp8266
